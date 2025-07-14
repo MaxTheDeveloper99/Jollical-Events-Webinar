@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The CEO Blueprint for Event Professionals | Jollical Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Trajan+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.css"
+    />
+    <style>
+      /* CSS Variables for Jollical Brand Colors */
+      :root {
+        --primary: #000000; /* Black - Primary color */
+        --secondary: #ffffff; /* White - Secondary color */
+        --accent1: #f0f0f0; /* Light gray - Negative color */
+        --accent2: #d9d9d9; /* Medium gray - Negative color */
+        --accent3: #333333; /* Dark gray - Negative color */
+        --gold: #d4af37; /* Gold - Accent color */
+        --white: #ffffff;
+        --black: #000000;
+      }
+
+      /* Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.6;
+        color: var(--black);
+        background-color: var(--white);
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Trajan Pro", serif;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--black);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: var(--black);
+        color: var(--white) !important;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-size: 17px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .btn:hover {
+        background-color: var(--gold);
+        color: var(--black);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--black);
+        border-color: var(--black);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--black);
+        color: var(--white);
+      }
+
+      /* Header Styles */
+      header {
+        background-color: var(--white);
+        height: 8rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        height: 210px;
+        width: 210px;
+        margin-top: -2.5rem;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-top: -3rem;
+      }
+
+      .nav-links a {
+        color: var(--black);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--gold);
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--gold);
+      }
+
+      .nav-links a:hover:after {
+        width: 100%;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--black);
+        cursor: pointer;
+      }
+
+      .mobile-menu {
+        display: none;
+      }
+
+      .mobile-menu a {
+        color: var(--black);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 100%
+          ),
+          url("https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")
+            no-repeat center center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        padding: 120px 0;
+        color: var(--white);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: var(--white);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero p.subtitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: var(--gold);
+        font-weight: 500;
+      }
+
+      /* Video Container Styles */
+      .video-container {
+        margin: 40px auto;
+        width: 100%;
+        max-width: 1000px; /* Adjust this as needed */
+        aspect-ratio: 16/9; /* Maintains 16:9 aspect ratio */
+        height: 38rem;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        border: 5px solid var(--gold);
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This ensures the video covers the container */
+      }
+
+      /* Countdown Timer */
+      .countdown {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        border-radius: 10px;
+        margin: 50px auto 0;
+        max-width: 600px;
+        border: 1px solid var(--gold);
+        backdrop-filter: blur(5px);
+      }
+
+      .countdown-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: var(--white);
+      }
+
+      .countdown-timer {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .countdown-number {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--gold);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .countdown-label {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--white);
+      }
+
+      /* About Section */
+      .about {
+        padding: 100px 0;
+        background-color: var(--white);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+      }
+
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: var(--gold);
+      }
+
+      .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .about p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      /* Features Section */
+      .features {
+        padding: 100px 0;
+        background-color: var(--accent1);
+        position: relative;
+      }
+
+      .features-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-top: 60px;
+      }
+
+      .feature-item {
+        background-color: var(--white);
+        padding: 40px 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border-top: 5px solid var(--gold);
+      }
+
+      .feature-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        font-size: 36px;
+        color: var(--gold);
+        margin-bottom: 20px;
+      }
+
+      .feature-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      .feature-desc {
+        font-size: 16px;
+        color: var(--accent3);
+      }
+
+      /* Perfect For Section */
+      .perfect-for {
+        padding: 100px 0;
+        background-color: var(--white);
+      }
+
+      .perfect-list {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .perfect-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: var(--accent1);
+        padding: 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+
+      .perfect-item:hover {
+        transform: translateX(10px);
+      }
+
+      .perfect-icon {
+        font-size: 20px;
+        color: var(--gold);
+        margin-right: 15px;
+        min-width: 30px;
+      }
+
+      .perfect-text {
+        font-size: 18px;
+      }
+
+      /* Testimonials Section */
+      .testimonials {
+        padding: 100px 0;
+        background-color: var(--black);
+        color: var(--white);
+      }
+
+      .testimonials h2 {
+        color: var(--white);
+      }
+
+      .testimonial-slider {
+        margin-top: 60px;
+        position: relative;
+      }
+
+      .glider-contain {
+        position: relative;
+      }
+
+      .glider {
+        overflow: hidden;
+      }
+
+      .testimonial-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        border: 1px solid var(--gold);
+        margin: 0 15px;
+        height: auto;
+      }
+
+      .testimonial-text {
+        /* font-style: italic; */
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .testimonial-author {
+        font-weight: 600;
+        color: var(--gold);
+        font-size: 16px;
+      }
+
+      .glider-dots {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .glider-dot {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .glider-dot.active {
+        background-color: var(--gold);
+        transform: scale(1.2);
+      }
+
+      /* Pricing Section */
+      .pricing {
+        padding: 100px 0;
+        background-color: var(--white);
+      }
+
+      .pricing-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+      }
+
+      .pricing-card {
+        background-color: var(--accent1);
+        padding: 50px 30px;
+        border-radius: 10px;
+        width: 350px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .pricing-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: var(--gold);
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .pricing-card.featured {
+        background-color: var(--black);
+        color: var(--white);
+        border-color: var(--gold);
+      }
+
+      .pricing-card.featured h3 {
+        color: var(--white);
+      }
+
+      .pricing-card.featured .price {
+        color: var(--gold);
+      }
+
+      .price {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--black);
+        margin: 20px 0;
+      }
+
+      .price span {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .pricing-features {
+        list-style: none;
+        margin: 30px 0;
+        text-align: left;
+      }
+
+      .pricing-features li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .pricing-features li:before {
+        content: "✓";
+        color: var(--gold);
+        position: absolute;
+        left: 0;
+      }
+
+      /* FAQ Section */
+      .faq {
+        padding: 100px 0;
+        background-color: var(--accent1);
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-question {
+        background-color: var(--white);
+        padding: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background-color: var(--accent2);
+      }
+
+      .faq-answer {
+        background-color: var(--white);
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      .faq-answer.active {
+        padding: 20px;
+        max-height: 500px;
+      }
+
+      /* CTA Section */
+      .cta {
+        padding: 120px 0;
+        background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 100%
+          ),
+          url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")
+            no-repeat center center;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        color: var(--white);
+      }
+
+      .cta h2 {
+        color: var(--white);
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .cta p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta .btn {
+        margin-top: 20px;
+        background-color: var(--gold);
+        color: var(--black);
+        font-weight: 700;
+      }
+
+      .cta .btn:hover {
+        background-color: var(--white);
+        color: var(--black);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 80px 0 30px;
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+        margin-bottom: 40px;
+      }
+
+      .footer-logo {
+        height: 210px;
+        width: 210px;
+        margin-top: -6rem;
+        margin-left: -3rem;
+        margin-bottom: -4rem;
+        /* margin-bottom: 20px; */
+      }
+
+      .footer-social {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .footer-social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--gold);
+        color: var(--black);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        font-size: 18px;
+      }
+
+      .footer-social a:hover {
+        background-color: var(--white);
+        transform: translateY(-3px);
+      }
+
+      .footer-links h4 {
+        color: var(--white);
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: var(--accent2);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: var(--gold);
+        padding-left: 5px;
+      }
+
+      .footer-copyright {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+      }
+
+      /* Modal */
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .modal.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .modal-content {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        position: relative;
+        transform: translateY(50px);
+        transition: all 0.3s ease;
+      }
+
+      .modal.active .modal-content {
+        transform: translateY(0);
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        color: var(--black);
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .modal-close:hover {
+        color: var(--gold);
+        transform: rotate(90deg);
+      }
+
+      .modal-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: var(--gold);
+      }
+
+      .form-submit {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      /* Payment Modal */
+      .payment-details {
+        background-color: var(--accent1);
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+
+      .payment-details h4 {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .payment-details p {
+        margin-bottom: 10px;
+      }
+
+      .bank-details {
+        background-color: var(--white);
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      /* Success Message */
+      .success-message {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: none;
+        text-align: center;
+      }
+
+      /* Responsive Styles */
+      @media screen and (max-width: 768px) {
+        .hero h1 {
+          font-size: 36px;
+        }
+
+        .hero p.subtitle {
+          font-size: 20px;
+        }
+
+        .countdown-number {
+          font-size: 28px;
+          width: 60px;
+          height: 60px;
+        }
+
+        .countdown-label {
+          font-size: 12px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .mobile-menu {
+          display: block;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 80%;
+          height: 100vh;
+          background-color: var(--white);
+          padding: 80px 30px;
+          transition: all 0.3s ease;
+          z-index: 1000;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-menu.active {
+          right: 0;
+        }
+
+        .mobile-menu a {
+          display: block;
+          padding: 15px 0;
+          font-size: 18px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .mobile-close {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 24px;
+          background: none;
+          border: none;
+          color: var(--black);
+          cursor: pointer;
+        }
+
+        .pricing-cards {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .hero h1 {
+          font-size: 28px;
+        }
+
+        .hero p.subtitle {
+          font-size: 18px;
+        }
+
+        .countdown-timer {
+          flex-wrap: wrap;
+        }
+
+        .countdown-item {
+          width: 50%;
+          margin-bottom: 20px;
+        }
+
+        .btn {
+          padding: 12px 25px;
+          font-size: 16px;
+        }
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate {
+        animation: fadeIn 0.8s ease forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.2s;
+      }
+      .delay-2 {
+        animation-delay: 0.4s;
+      }
+      .delay-3 {
+        animation-delay: 0.6s;
+      }
+      .delay-4 {
+        animation-delay: 0.8s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <img
+            src="./assets/Jollical_The_Brand-2.png"
+            alt="Jollical Events"
+            class="logo"
+          />
+        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#register" class="btn">Register Now</a>
+        </nav>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <button class="mobile-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="#about">About</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#register" class="btn">Register Now</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="tag animate">EXCLUSIVE WEBINAR</span>
+        <h1 class="animate delay-1">
+          The CEO Blueprint for Event Professionals
+        </h1>
+        <p class="subtitle animate delay-2">
+          Structure your business. Streamline your process. Strengthen your
+          documentation.
+        </p>
+        <a href="#register" class="btn animate delay-3"
+          >Join the Blueprint Webinar Now!</a
+        >
+
+        <!-- Video Embed - Updated Container -->
+        <div class="video-container">
+          <video controls poster="video-poster.jpg" preload="metadata" autoplay>
+            <source src="./assets/Hero video 1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown animate delay-4">
+          <h3 class="countdown-title">Webinar Starts In:</h3>
+          <div class="countdown-timer">
+            <div class="countdown-item">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">Why This Webinar?</h2>
+        <div class="about-content">
+          <p>
+            You didn't become an event professional to stay stuck in hustle
+            mode. You dream of systems, actual clients, and a brand that works
+            while you sleep. But school didn't teach you how to build the
+            business side of events.
+          </p>
+          <p>
+            You've been juggling too many things with no structure or real
+            documentation.
+          </p>
+          <p>
+            <em>That ends now.</em>
+          </p>
+          <p>
+            The CEO Blueprint is a dynamic 3-day webinar for event pros who want
+            to stop hustling and start building like CEOs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="curriculum">
+      <div class="container features-content">
+        <h2 class="section-title">Day-by-Day Breakdown</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3 class="feature-title">Day 1: STRUCTURE</h3>
+            <p class="feature-desc">
+              Let's stop relying on vibes and guesswork. It's time to build a
+              business that breathes.
+            </p>
+            <ul style="margin-top: 15px; padding-left: 20px">
+              <li>Clear team roles and responsibilities</li>
+              <li>Mapping your client journey</li>
+              <li>Workflow strategies</li>
+              <li>Building systems that scale</li>
+            </ul>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="feature-title">Day 2: PROCESS</h3>
+            <p class="feature-desc">
+              The skills aren't the problem; your flow is. Get a repeatable
+              process that saves time and energy.
+            </p>
+            <ul style="margin-top: 15px; padding-left: 20px">
+              <li>Designing a solid client workflow</li>
+              <li>Automation tools to handle admin stress</li>
+              <li>Event day execution plans</li>
+              <li>Professional client off-boarding</li>
+            </ul>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <h3 class="feature-title">Day 3: DOCUMENTATION</h3>
+            <p class="feature-desc">
+              This isn't just paperwork; this is your power. Learn key documents
+              for serious event pros.
+            </p>
+            <ul style="margin-top: 15px; padding-left: 20px">
+              <li>Service contracts & SLAs</li>
+              <li>Client onboarding forms</li>
+              <li>Corporate profiles & proposals</li>
+              <li>Legal structure & compliance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+      <div class="container">
+        <h2 class="section-title">Who Is This For?</h2>
+        <div class="perfect-list">
+          <div class="perfect-item">
+            <div class="perfect-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="perfect-text">
+              You're an event professional tired of guesswork
+            </div>
+          </div>
+          <div class="perfect-item">
+            <div class="perfect-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="perfect-text">
+              You want structure but don't know where to start
+            </div>
+          </div>
+          <div class="perfect-item">
+            <div class="perfect-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="perfect-text">
+              You're fresh out of event school or it's been years
+            </div>
+          </div>
+          <div class="perfect-item">
+            <div class="perfect-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="perfect-text">
+              You're ready to treat events as a business, not a side hustle
+            </div>
+          </div>
+          <div class="perfect-item">
+            <div class="perfect-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="perfect-text">
+              You've missed corporate gigs due to lack of documentation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Others Are Saying</h2>
+        <div class="testimonial-slider">
+          <div class="glider-contain">
+            <div class="glider">
+              <div class="testimonial-item">
+                <p class="testimonial-text">
+                  "Haaaaa! This was supposed to be a Master Class. You are
+                  indeed an enigma of knowledge. The event industry is blessed
+                  to have you. Thank you!"
+                </p>
+                <p class="testimonial-author">- Past Participant</p>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-text">
+                  "Joyceeeell!!!! Haaaaaaa! Girl, you are super amazing! I'm
+                  proud of you paaaaaaa! Mehn, you finish work! Wondering how
+                  the paid webinar would be 😊😊😊😊"
+                </p>
+                <p class="testimonial-author">- Happy Attendee</p>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-text">
+                  "Today webinar was super insightful and well detailed... I'm
+                  glad I didn't missed this session... thank you jollica events
+                  for this opportunity.. looking forward to the paid class"
+                </p>
+                <p class="testimonial-author">- Event Professional</p>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-text">
+                  "3 solid hours!!! 3 solid hours of a BIG SHIFT in my pricing
+                  game!!! And it was FREE!!!!!! You shared your knowledge
+                  unlimited, I was listening and editing my templates, rates
+                  cards, my note is full!!!!!"
+                </p>
+                <p class="testimonial-author">- Satisfied Participant</p>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-text">
+                  "Thank u so so much ma. U made me realize awhole lot tonight
+                  the class was powerful and knowledgeable, I really enjoyed the
+                  class and thanks for the solid 3hours of value and impacting
+                  wisdom to us"
+                </p>
+                <p class="testimonial-author">- Grateful Attendee</p>
+              </div>
+            </div>
+            <div class="glider-dots" id="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Webinar Details & Pricing</h2>
+        <div class="about-content">
+          <p style="text-align: center; margin-bottom: 30px">
+            <strong>Dates:</strong> July 29–31, 2025<br />
+            <strong>Time:</strong> 7 PM Daily (WAT)<br />
+            <strong>Location:</strong> Google Meet (link sent after payment)
+          </p>
+        </div>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <h3>Early Bird</h3>
+            <div class="price">₦130,000 <span>($85)</span></div>
+            <ul class="pricing-features">
+              <li>3 days of LIVE, intensive teaching</li>
+              <li>Replay access for life</li>
+              <li>Done-for-you templates</li>
+              <li>3-month support group</li>
+            </ul>
+            <a href="#register" class="btn">Register Now</a>
+          </div>
+          <div class="pricing-card featured">
+            <h3>Standard Rate</h3>
+            <div class="price">₦150,000 <span>($130)</span></div>
+            <ul class="pricing-features">
+              <li>3 days of LIVE, intensive teaching</li>
+              <li>Replay access for life</li>
+              <li>Done-for-you templates</li>
+              <li>3-month support group</li>
+            </ul>
+            <a href="#register" class="btn">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>I'm not a planner; is this webinar still for me?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We designed this training for all event professionals. If you're
+                in the events industry, this room is yours.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will I get replay access?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                100%! Even if you miss a session, you'll get lifetime access to
+                all replays so you can watch at your own pace.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are the templates editable?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! Every document is editable and done for you. Whether you're
+                an MC, decorator, or stylist, you can tweak each template to fit
+                your needs perfectly.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What if I'm just starting?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Then this is the best time to join. You'll avoid years of trial
+                and error by learning what works from the start. You'll walk
+                away with systems that most people take years to build.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >I've been in the industry for a while; will I still learn
+                something new?</span
+              >
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                1000%! This isn't about the basics; it's about building
+                sustainable systems for bigger, better-paying opportunities.
+                Even experienced eventpreneurs will gain new clarity, templates,
+                and structure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="register">
+      <div class="container cta-content">
+        <h2>Your next level isn't far; it's one decision away.</h2>
+        <p>
+          It's time to stop winging it. Build like a CEO, lead like a pro.<br />
+          Structure | Process | Documentation.
+        </p>
+        <p>
+          Your business deserves this blueprint; harness it now.<br />
+          Register now, and don't look back.
+        </p>
+        <button class="btn register-btn">
+          Join the Blueprint Webinar Now!
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-about">
+            <img
+              src="./assets/Jollical_The_Brand-2.png"
+              alt="Jollical Events"
+              class="footer-logo"
+            />
+            <p>
+              Jollical Events empowers event professionals with the systems,
+              structure, and documentation needed to build sustainable,
+              profitable businesses.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#curriculum">Curriculum</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#register">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:info@jollicalevents.com"
+                  >info@jollicalevents.com</a
+                >
+              </li>
+              <li><a href="tel:+2348068498054">+234 806 849 8054</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2025 Jollical Events. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registration-modal">
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <h3 class="modal-title">Join the Blueprint Webinar</h3>
+        <form id="registration-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required />
+          </div>
+          <button type="submit" class="btn form-submit">
+            Proceed to Payment
+          </button>
+        </form>
+        <div class="success-message" id="success-message">
+          <i class="fas fa-check-circle"></i> Registration successful! Check
+          your email for confirmation.
+        </div>
+
+        <div
+          class="error-message"
+          id="error-message"
+          style="
+            display: none;
+            color: red;
+            text-align: center;
+            margin-top: 15px;
+          "
+        >
+          <!-- Error messages will appear here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="payment-modal">
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <h3 class="modal-title">Complete Your Registration</h3>
+        <div class="payment-details">
+          <h4>Payment Instructions</h4>
+          <p>Please make payment to the account below:</p>
+          <div class="bank-details">
+            <p><strong>Bank Name:</strong> UBA</p>
+            <p><strong>Account Name:</strong> Jollical Events</p>
+            <p><strong>Account Number:</strong> 1023359298</p>
+            <p>
+              <strong>Amount:</strong> ₦130,000 (Early Bird) / ₦150,000
+              (Standard)
+            </p>
+          </div>
+          <p style="margin-top: 15px">
+            After payment, click the button below to confirm your registration
+            on WhatsApp.
+          </p>
+        </div>
+        <button class="btn" id="whatsapp-confirm">Confirm on WhatsApp</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.js"></script>
+    <script>
+      // DOM Elements
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const mobileClose = document.querySelector(".mobile-close");
+      const registerBtn = document.querySelector(".register-btn");
+      const registerLinks = document.querySelectorAll('a[href="#register"]');
+      const registrationModal = document.getElementById("registration-modal");
+      const paymentModal = document.getElementById("payment-modal");
+      const modalClose = document.querySelectorAll(".modal-close");
+      const registrationForm = document.getElementById("registration-form");
+      const successMessage = document.getElementById("success-message");
+      const whatsappConfirmBtn = document.getElementById("whatsapp-confirm");
+
+      // Mobile Menu Toggle
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+      });
+
+      mobileClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
+
+      // Registration Modal
+      registerBtn.addEventListener("click", () => {
+        registrationModal.classList.add("active");
+      });
+
+      registerLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          registrationModal.classList.add("active");
+        });
+      });
+
+      // Close modals when X is clicked
+      modalClose.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          registrationModal.classList.remove("active");
+          paymentModal.classList.remove("active");
+        });
+      });
+
+      // Close modal when clicking outside
+      window.addEventListener("click", (e) => {
+        if (e.target === registrationModal) {
+          registrationModal.classList.remove("active");
+        }
+        if (e.target === paymentModal) {
+          paymentModal.classList.remove("active");
+        }
+      });
+
+      // Form submission
+      registrationForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Show payment modal
+        registrationModal.classList.remove("active");
+        paymentModal.classList.add("active");
+      });
+
+      // WhatsApp confirmation
+      whatsappConfirmBtn.addEventListener("click", function () {
+        // Replace with your WhatsApp number and message
+        const whatsappNumber = "+2349039730882";
+        const message =
+          "Hello! I've just registered for The CEO Blueprint webinar and made payment. Here are my details:\n\nName: [Name]\nEmail: [Email]\nPayment Reference: [Reference]";
+
+        // Open WhatsApp with pre-filled message
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+          "_blank"
+        );
+
+        // Close modal
+        paymentModal.classList.remove("active");
+
+        // Show success message
+        registrationForm.style.display = "none";
+        successMessage.style.display = "block";
+      });
+
+      // FAQ Accordion
+      const faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector("i");
+
+          // Toggle answer
+          answer.classList.toggle("active");
+
+          // Toggle icon
+          if (answer.classList.contains("active")) {
+            icon.classList.remove("fa-plus");
+            icon.classList.add("fa-minus");
+          } else {
+            icon.classList.remove("fa-minus");
+            icon.classList.add("fa-plus");
+          }
+        });
+      });
+
+      // Testimonial Carousel
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: "#dots",
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      // Countdown Timer
+      function updateCountdown() {
+        const webinarDate = new Date("July 29, 2025 19:00:00").getTime();
+        const now = new Date().getTime();
+        const timeRemaining = webinarDate - now;
+
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").innerHTML = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").innerHTML = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").innerHTML = seconds
+          .toString()
+          .padStart(2, "0");
+
+        if (timeRemaining < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        }
+      }
+
+      // Initial countdown update
+      updateCountdown();
+
+      // Update countdown every second
+      const countdownInterval = setInterval(updateCountdown, 1000);
+
+      // Smooth scrolling for anchor links
+      document
+        .querySelectorAll('a[href^="#"]:not([href="#"])')
+        .forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#register") return; // Skip registration links as they open modal
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: "smooth",
+              });
+
+              // Close mobile menu if open
+              mobileMenu.classList.remove("active");
+            }
+          });
+        });
+
+      // Animation on scroll
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(
+          ".feature-item, .perfect-item, .testimonial-item, .pricing-card"
+        );
+
+        reveals.forEach((item) => {
+          const windowHeight = window.innerHeight;
+          const elementTop = item.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            item.classList.add("animate");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+
+      // Call once to check elements in view on page load
+      revealOnScroll();
+    </script>
+  </body>
+</html>
